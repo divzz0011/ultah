@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBD By Divzz </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body
+  <body
+  class="flex justify-center items-center h-screen bg-cover bg-center"
+  style="background-image: url('https://img.freepik.com/free-vector/blurred-valentine-s-day-wallpaper_23-2148819570.jpg?t=st=1743609000~exp=1743612600~hmac=be334b44385094358d68083ca52ab4f739e4ac99a0b9117f2cac655190386ffc&w=996');"
+  >
+>
+  >
+    <div
+      id="kartu"
+      class="bg-pink-100 border-4 border-pink-300 shadow-lg shadow-pink-500 rounded-xl text-center p-8 w-80 animate__animated animate__backInDown"
+    >
+      <h1 class="text-3xl font-semibold text-pink-600">Happy Birthday</h1>
+      <h1 class="text-4xl text-pink-700 font-bold animate__animated animate__pulse animate__infinite">
+        
+      </h1>
+      <button
+        class="p-2 bg-pink-500 text-white rounded mt-5 w-full hover:bg-pink-700 transition ease-in-out duration-300 animate__animated animate__delay-1s animate__tada"
+        onclick="ubahKartu()"
+      >
+        Klik Disini !
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+
+      function ubahKartu() {
+        document.getElementById("kartu").innerHTML = `
+          <h1 class="font-semibold text-pink-700 text-wrap animate__animated animate__zoomIn">
+            Selamat ulang tahun! Semoga panjang umur, makin banyak kebahagiaan, rezeki lancar, dan segala impian jadi kenyataan.
+            Semoga kita terus bisa bareng-bareng, seru-seruan, dan saling dukung ya! 🎉🎂
+          </h1>
+          <h2 class="mt-3 text-pink-600 animate__animated animate__fadeIn">- Dari : Divzz -</h2>
+          <button
+            class="p-2 bg-pink-400 text-white rounded mt-5 w-full hover:bg-pink-600 transition ease-in-out duration-300 animate__animated animate__delay-1s animate__tada"
+            onclick="refresh()"
+          >
+            Tutup
+          </button>
+        `;
+      }
+      
+      function refresh() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
